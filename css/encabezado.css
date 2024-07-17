@@ -1,0 +1,240 @@
+.encabezado__principal {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 32px 0px;
+}
+
+.encabezado__principal__contenedor {
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+.logo__aluraGeek {
+    margin-right: 32px;
+}
+
+.encabezado__principal__entrada {
+    align-items: center;
+    background-color: var(--colorBuscador);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+    padding: 5px 16px 5px 8px;
+    width: 393px;
+}
+
+.principal__entrada__busqueda {
+    background-color: inherit;
+    border: none;
+    color: var(--colorTexto);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    margin-right: 15px;
+    padding: 2px 0px 2px 8px;
+    width: 100%;
+}
+
+.principal__entrada__busqueda:focus {
+    outline: none;
+}
+
+.principal__entrada__busqueda::placeholder {
+    color: var(--colorPlaceholder);
+}
+.principal__entrada__lupa {
+    opacity: 0.8;
+}
+
+.encabezado__principal__boton {
+    align-items: center;
+    background: none;
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+    cursor: pointer;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 51px;
+    justify-content: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    width: 182px;
+}
+
+.principal__lupa__icon {
+    display: none;
+}
+
+.encabezado__principal__boton:hover {
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+    font-weight: 500;
+}
+
+.encabezado__banner {
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("https://images.unsplash.com/photo-1527896573815-b7dd74893deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80") center/cover no-repeat;
+    display: flex;
+    height: 352px;
+    justify-content: left;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+.banner__texto__titulo {
+    color: var(--colorBlanco);
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    margin: 16px 0;
+}
+
+.banner__texto__descripcion {
+    color: var(--colorBlanco);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.banner__texto__boton {
+    background-color: var(--colorAzul);
+    border: none;
+    color: var(--colorBlanco);
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 51px;
+    width: 129px;
+}
+
+.banner__texto__boton:hover {
+    background-color: var(--colorBlanco);
+    border: 2px solid var(--colorAzul);
+    color: var(--colorAzul);
+    font-weight: 600;
+}
+
+/* ESTILOS FORMATO TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .encabezado__principal {
+        margin: 0 5%;
+        padding: 16px 0px;
+    }
+
+    .encabezado__principal__contenedor {
+        height: 40px;
+    }
+
+    .logo__aluraGeek.encabezado__principal__logo {
+        margin-right: 20px;
+        width: 85%;
+    }
+
+    .encabezado__principal__entrada {
+        width: 272px;
+    }
+
+    .encabezado__principal__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        margin-right: 15px;
+        width: 166px;
+    }
+
+    .encabezado__banner {
+        padding-left: 5%;
+    }
+
+    .banner__texto__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        width: 118px;
+    }
+}
+
+/* ESTILOS FORMATO MOVILE */
+@media screen and (max-width: 768px) {
+    .encabezado__principal {
+        margin: 0 3%;
+        padding: 16px 0px;
+    }
+
+    .encabezado__principal__contenedor {
+        height: 40px;
+    }
+
+    .logo__aluraGeek.encabezado__principal__logo {
+        margin-right: 20px;
+        width: 85%;
+    }
+
+    .encabezado__principal__entrada {
+        display: none;
+    }
+
+    .principal__lupa__icon {
+        display: block;
+        margin-left: 2%;
+        margin-right: 2%;
+        filter: drop-shadow(1px 1px 1px black);
+    }
+
+    .encabezado__principal__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        margin-right: 3.5%;
+        width: 133px;
+    }
+
+    .encabezado__banner {
+        height: 192px;
+        padding-left: 3.5%;
+        padding-bottom: 3.5%;
+    }
+
+    .banner__texto__titulo {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 8px 0;
+    }
+
+    .banner__texto__descripcion {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 8px 0;
+    }
+
+    .banner__texto__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 36px;
+        width: 106px;
+    }
+}
+/* CLASES PARA FUNCIONALIDADES DE BOTONES */
+.mostrarElemento {
+    display: flex;
+    order: -1;
+    width: 80vw;
+}
+.ocultarElemento {
+    display: none;
+}

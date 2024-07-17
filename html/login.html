@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/encabezado.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/rodapie.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body class="app">
+    <header class="encabezado">
+        <div class="encabezado__principal">
+            <div class="encabezado__principal__contenedor">
+                <a href="../index.html"><img class="encabezado__principal__logo logo__aluraGeek" src="../img/Logo.png"
+                        alt="logo de AluraGeek"></a>
+                <div class="encabezado__principal__entrada">
+                    <input class="principal__entrada__busqueda" type="text" placeholder="¿Qué desea buscar?">
+                    <img class="principal__entrada__lupa" src="../img/Lupa.png" alt="lupa de busqueda">
+                </div>
+            </div>
+            <a class="encabezado__principal__boton" href="../html/login.html">Login</a>
+            <img class="principal__lupa__icon" src="../img/Lupa.png" alt="lupa de busqueda">
+        </div>
+    </header>
+
+    <main class="contenido">
+        <section>
+            <form class="formularioLogin">
+                <h3 class="formularioLogin__titulo">Iniciar Sesión</h3>
+                <input class="formulario__entrada" type="email" placeholder="Escriba su correo electrónico">
+                <input class="formulario__entrada" type="text" placeholder="Escriba su contraseña">
+                <a href="./agregarProducto.html" style="text-decoration: none;"><input class="formulario__boton login" type="button" value="Entrar"></a>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodapie">
+        <div class="rodapie__contenedor1">
+            <div class="rodapie__contenedor1__caja1">
+                <div class="rodapie__contenedor1__logo">
+                    <a href="./index.html"><img class="logo__aluraGeek" src="../img/Logo.png"
+                        alt="logo de AluraGeek"></a>
+                </div>
+                <div class="rodapie__contenedor1__links">
+                    <ul class="links__lista">
+                        <li class="links__lista__item"><a href="#">Conocenos mas !! </a></li>
+                        <li class="links__lista__item"><a href="#">Política de privacidad</a></li>
+                        <li class="links__lista__item"><a href="#">Programa de fidelidad</a></li>
+                        <li class="links__lista__item"><a href="#">Nuestras tiendas</a></li>
+                        <li class="links__lista__item"><a href="#">Quiero ser franquiciado</a></li>
+                        <li class="links__lista__item"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rodapie__contenedor1__contacto">
+                <form class="contacto__formulario">
+                    <label class="formulario__etiqueta">Hable con nosotros</label>
+                    <input class="formulario__nombre" type="text" placeholder="Nombre">
+                    <textarea class="formulario__mensaje" placeholder="Escriba su mensaje"
+                        aria-placeholder=""></textarea>
+                    <input class="formulario__boton" type="submit" value="Enviar Mensaje">
+                </form>
+            </div>
+        </div>
+        <div class="rodapie__contenedor2">
+            <p class="rodapie__contenedor2__texto">Desarrollado para Challengue Alura</p>
+        </div>
+    </footer>
+
+    <script src="../js/encabezado.js"></script>
+
+</body>
+
+</html>

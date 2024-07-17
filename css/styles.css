@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorAzul: #6183b1;
+    --colorBlanco: #FFFFFF;
+    --colorBordeForm: #bd6565;
+    --colorBuscador: #614b4b;
+    --colorFondo: #6d4747;
+    --colorPlaceholder: #A2A2A2;
+    --colorRodapie: #5e6b7c;
+    --colorTexto: #491010;
+
+}
+
+.app {
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenido {
+    background-color: var(--colorFondo);
+}

@@ -1,0 +1,71 @@
+.formularioLogin {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 91px 20px;
+}
+
+.formularioLogin__titulo {
+    color: var(--colorTexto);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.formulario__entrada {
+    border: none;
+    border-bottom: 1px solid var(--colorBordeForm);
+    border-radius: 4px;
+    color: var(--colorTexto);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    height: 63px;
+    margin-bottom: 25px;
+    padding: 0 12px;
+    width: 423px;
+}
+
+.formulario__entrada::placeholder {
+    color: var(--colorPlaceholder);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.formulario__boton.login {
+    width: 423px;
+}
+
+@media screen and (max-width: 768px) {
+    .formularioLogin {
+        padding: 40px 3%;
+    }
+
+    .formularioLogin__titulo {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .formulario__entrada {
+        font-weight: 400;
+        font-size: 16px;
+        height: 41px;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        width: 275px;
+    }
+
+    .formulario__entrada::placeholder {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .formulario__boton.login {
+        width: 275px;
+    }
+}

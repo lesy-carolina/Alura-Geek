@@ -1,0 +1,112 @@
+.contenido__seccion__encabezado {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10% 10px 10%;
+}
+
+.seccion__encabezado__titulo {
+    color: var(--colorTexto);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.seccion__encabezado__link {
+    color: var(--colorAzul);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.seccion__encabezado__img {
+    position: relative;
+    bottom: -3px;
+}
+
+.contenido__seccion__productos {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    margin: 0px 10%;
+}
+
+.contenido__seccion:last-child {
+    padding-bottom: 80px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+.producto__info {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.75em;
+    margin-top: 0.5em;
+    padding-left: 3px;
+}
+
+.producto__info__nombre {
+    color: var(--colorTexto);
+    font-weight: 500;
+}
+
+.producto__info__precio {
+    color: var(--colorTexto);
+    font-weight: bold;
+}
+
+.producto__info__link {
+    color: var(--colorAzul);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* ESTILOS FORMATO TABLETS */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .contenido__seccion__productos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .producto.card5,
+    .producto.card6 {
+        display: none;
+    }
+}
+
+/* ESTILOS FORMATO MOVILES */
+@media screen and (max-width:768px) {
+    .contenido__seccion__encabezado {
+        padding: 30px 5% 10px 5%;
+    }
+
+    .contenido__seccion:last-child {
+        padding-bottom: 25px;
+    }
+
+    .contenido__seccion__productos {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 5%;
+    }
+
+    .producto.card5,
+    .producto.card6 {
+        display: none;
+    }
+
+    .seccion__encabezado__titulo {
+        font-size: 22px;
+    }
+
+    .seccion__encabezado__link {
+        font-size: 14px;
+    }
+}

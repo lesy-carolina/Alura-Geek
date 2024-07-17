@@ -1,0 +1,176 @@
+.rodapie__contenedor1 {
+    background-color: var(--colorRodapie);
+    display: flex;
+    flex-wrap: wrap;
+    height: 368px;
+    padding: 64px 10%;
+}
+
+.rodapie__contenedor1__caja1 {
+    display: flex;
+    width: 50%;
+}
+
+.rodapie__contenedor1__logo {
+    width: 50%;
+}
+
+.rodapie__contenedor1__links {
+    width: 50%;
+}
+
+.links__lista {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.links__lista__item a {
+    color: var(--colorTexto);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.rodapie__contenedor1__contacto {
+    width: 50%;
+}
+
+.formulario__etiqueta {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.formulario__nombre,
+.formulario__mensaje {
+    border: none;
+    border-radius: 4px;
+    color: var(--colorTexto);
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 56px;
+    margin: 10px 0;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.formulario__mensaje {
+    height: 82px;
+    padding-top: 10px;
+}
+
+.formulario__nombre::placeholder,
+.formulario__mensaje::placeholder {
+    color: var(--colorPlaceholder);
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    left: 12px;
+    top: 10px;
+    position: absolute;
+}
+
+.formulario__boton {
+    background-color: var(--colorAzul);
+    border: none;
+    color: var(--colorBlanco);
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    height: 51px;
+    width: 144px;
+}
+
+.formulario__boton:hover {
+    background-color: var(--colorBlanco);
+    border: 1.5px solid #2A7AE4;
+    color: var(--colorAzul);
+    font-weight: 600;
+}
+
+.rodapie__contenedor2 {
+    align-items: center;
+    background-color: var(--colorBlanco);
+    color: var(--colorTexto);
+    display: flex;
+    font-size: 16px;
+    height: 102px;
+    justify-content: center;
+}
+
+/* ESTILOS PARA TABLETS */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .rodapie__contenedor1 {
+        padding: 32px 5%;
+    }
+
+    .rodapie__contenedor1__caja1 {
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .rodapie__contenedor1__logo {
+        width: 100%;
+    }
+
+    .rodapie__contenedor1__links {
+        width: 100%;
+    }
+
+    .rodapie__contenedor1__contacto {
+        width: 65%;
+    }
+    .formulario__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        width: 133px;
+    }
+}
+
+/* ESTILOS PARA MOVILES */
+@media screen and (max-width:768px) {
+    .rodapie__contenedor1 {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 3%;
+    }
+
+    .rodapie__contenedor1__caja1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rodapie__contenedor1__logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .rodapie__contenedor1__links {
+        text-align: center;
+        width: 100%;
+    }
+
+    .rodapie__contenedor1__contacto {
+        width: 100%;
+    }
+    .formulario__boton {
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        width: 133px;
+    }
+
+    .rodapie__contenedor2 {
+        font-size: 15px;
+        height: 60px;
+        padding: 0 6%;
+    }
+
+    .rodapie__contenedor2__texto {
+        text-align: center;
+    }
+}
